@@ -1,0 +1,216 @@
+<html>
+<head>
+	<meta name="viewport" content="width= device-width, initial-scal=1.0">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="test_style.css">
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("side-nav-bar").classList.toggle("active");
+          document.getElementById("full-body").classList.toggle("active");
+		}
+		myFunction();
+	</script>
+</head>
+<body>
+   <div class="scroll-bar">
+    <div class="side-nav" id = "side-nav-bar">
+        <h3>jupiter</h3>
+        <p id ="h3_below">Weather ☀ Close to you</p>
+        <ul id="firstul">
+            <li> ☗ Home</li>
+            <li> ☀ Today's weather</li>
+            <li> ☁ Weather Forecast</li>
+            <li> ✉ news</li>
+            <li> ☛ Education</li>
+        </ul>
+        <ul id = "secondul">
+            <li> ☄ Science</li>
+            <li> ☂ 7Day Weather</li>
+            <li> ★ 14 Days Weather Report</li>
+            <li> ¶ New Products</li>
+        </ul>
+        <ul id = "secondul">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul id = "secondul">
+            <li></li>
+            <li> </li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul id = "secondul">
+            <li></li>
+            <li> </li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+
+
+<div class="full_body" id="full-body">
+    <header>
+        <button onclick="myFunction()" class="my_button">Dropdown</button>
+        <div class = "input">
+            <input type="text" class="inputValue" placeholder="Location Search..,">
+            <input type="submit" value = "Submit" class="button">
+        </div>
+        
+        <h1 class="weatherName">Weather</h1>
+    
+        <div class = "display">
+            <p class = "temp">-.-</p>
+            <p class="desc">-.-</p>
+            
+            <p class = "subDetails">-.-</p>
+        </div>
+    </header>
+    <div class="side">
+        <li>Temp     :</li>
+        <li>Temp Max :</li>
+        <li>Temp Min :</li>
+        <li>Wind     :</li>
+        <li>Pre      :</li>
+        <li>Desc     :</li>
+    </div>
+    <div class="weather">
+    <ul class="day1"><a onclick="day0()">
+        <li id="day1">day1</li>
+        <li><img id = "day1img"></li>
+        <li id ="day1temp"></li>
+        <li id = "day1max">Max</li>
+        <li id = "day1min" >Min</li>
+        <li id = "day1wind">Wind</li>
+        <li id = "day1pre">pre</li>
+        <li id = "day1desc">-.-</li></a>
+    </ul>
+    <ul class="day2"><a onclick="day11()">
+        <li id="day2">day2</li>
+        <li><img id = "day2img"></li>
+        <li id ="day2temp"></li>
+        <li id = "day2max">Max</li>
+        <li id = "day2min" >Min</li>
+        <li id = "day2wind">Wind</li>
+        <li id = "day2pre">pre</li>
+        <li id = "day2desc">-.-</li></a>
+    </ul>
+    <ul class="day3"><a onclick="day22()">
+        <li id="day3">day3</li>
+        <li><img id = "day3img"></li>
+        <li id ="day3temp"></li>
+        <li id = "day3max">Max</li>
+        <li id = "day3min" >Min</li>
+        <li id = "day3wind">Wind</li>
+        <li id = "day3pre">pre</li>
+        <li id = "day3desc">-.-</li></a>
+    </ul>
+    <ul class="day4"><a onclick="day33()">
+        <li id="day4">day4</li>
+        <li><img id = "day4img"></li>
+        <li id ="day4temp"></li>
+        <li id = "day4max">Max</li>
+        <li id = "day4min" >Min</li>
+        <li id = "day4wind">Wind</li>
+        <li id = "day4pre">pre</li>
+        <li id = "day4desc">-.-</li></a>
+    </ul>
+    <ul class="day5"><a onclick="day44()">
+        <li id="day5">day5</li>
+        <li><img id = "day5img"></li>
+        <li id ="day5temp"></li>
+        <li id = "day5max">Max</li>
+        <li id = "day5min">Min</li>
+        <li id = "day5wind">Wind</li>
+        <li id = "day5pre">pre</li>
+        <li id = "day5desc">-.-</li></a>
+    </ul>
+    </div>
+    
+    <div class="down_parah">
+        <p id = "today-date">Friday</p>
+        <ul class = "side_parah">
+            <li>Temperature Min</li>
+            <li>Temperature Max</li>
+            <li id = "day1wind">Wind Speed (k/h)</li>
+            <li>Wind Direction</li>
+            <li> Precipitation (mm/3h)</li>
+        </ul>
+    </div>
+    <div id = "time_list">
+        <div class ="time-box">
+        <ul id = "time">
+            <p id = "time-head">00.00</p>
+            <li id = "time0tempmin">-.-</li>
+            <li id = "time0tempmax">-.-</li>
+            <li id = "time0wind">-.-</li>
+            <li id = "time0pre">-.-</li>
+            <li id = "time0desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.03</p>
+            <li id = "time1tempmin">-.-</li>
+            <li id = "time1tempmax">-.-</li>
+            <li id = "time1wind">-.-</li>
+            <li id = "time1pre">-.-</li>
+            <li id = "time1desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.06</p>
+            <li id = "time2tempmin">-.-</li>
+            <li id = "time2tempmax">-.-</li>
+            <li id = "time2wind">-.-</li>
+            <li id = "time2pre">-.-</li>
+            <li id = "time2desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.09</p>
+            <li id = "time3tempmin">-.-</li>
+            <li id = "time3tempmax">-.-</li>
+            <li id = "time3wind">-.-</li>
+            <li id = "time3pre">-.-</li>
+            <li id = "time3desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.12</p>
+            <li id = "time4tempmin">-.-</li>
+            <li id = "time4tempmax">-.-</li>
+            <li id = "time4wind">-.-</li>
+            <li id = "time4pre">-.-</li>
+            <li id = "time4desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.15</p>
+            <li id = "time5tempmin">-.-</li>
+            <li id = "time5tempmax">-.-</li>
+            <li id = "time5wind">-.-</li>
+            <li id = "time5pre">-.-</li>
+            <li id = "time5desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.18</p>
+            <li id = "time6tempmin">-.-</li>
+            <li id = "time6tempmax">-.-</li>
+            <li id = "time6wind">-.-</li>
+            <li id = "time6pre">-.-</li>
+            <li id = "time6desc">-.-</li>
+        </ul>
+        <ul id = "time">
+            <p id = "time-head">00.21</p>
+            <li id = "time7tempmin">-.-</li>
+            <li id = "time7tempmax">-.-</li>
+            <li id = "time7wind">-.-</li>
+            <li id = "time7pre">-.-</li>
+            <li id = "time7desc">-.-</li>
+        </ul>
+    </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
